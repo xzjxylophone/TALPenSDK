@@ -2,7 +2,7 @@
 
 Pod::Spec.new do |s|
   s.name     = "TALPenSDK"
-  s.version  = "0.1"
+  s.version  = "0.1.1"
   s.license  = "MIT"
   s.summary  = "TALPenSDK is a robot pen sdk"
   s.homepage = "https://github.com/xzjxylophone/TALPenSDK"

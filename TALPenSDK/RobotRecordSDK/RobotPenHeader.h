@@ -1,7 +1,7 @@
 
 /*********************************************************/
 /*********************************************************/
-/*----------------------SDK 4.0.1------------------------*/
+/*----------------------SDK 3.2.4------------------------*/
 /*********************************************************/
 /*********************************************************/
 #ifdef DEBUG
@@ -21,7 +21,7 @@
 #define ShowBLEAlert NO
 
 /** 最大设备号*/
-#define DeviceNumber_MAX 55
+#define DeviceNumber_MAX 50
 
 //注意：必看！！！
 //此处的宽高为板子横向的宽高。
@@ -30,13 +30,13 @@
 //HEIGHT 表示板子短边的像素值
 
 
-//对应设备：T8A/J0_A4/T9A/T7_PL/T9_J0/J0_A4_P/T9E/J0-T9/T8B/T9B-YD/T9W/T8C/P1_CX_M3/T9A_EN/T9W_A/T8S/T9W_QX/T9W_YJ 硬件号 6/11/12/14/18/19/20/21/30/31/34/35/40/41/42/48/50/55
+//对应设备：T8A/J0_A4/T9A/T7_PL/T9_J0/J0_A4_P/T9E/J0-T9/T8B/T9B-YD/T9W/T8C/P1_CX_M3/T9A_EN/T9W_A/T8S/T9W_QX 硬件号 6/11/12/14/18/19/20/21/30/31/34/35/40/41/42/48/50
 /** 标准A4设备纵向 纵向 宽度**/
 #define VALUE_A4_WIDTH  22600.0f
 /** 标准A4设备纵向 高度**/
 #define VALUE_A4_HEIGHT 16650.0f
 
-//对应设备：P7/T7/T7E_TS/T7_TS/T7_LW/T7_CY/C7/S7_JD/T7A/T7_HI/T7B_HF/S7_SD/T7E/T7E_HFHH/S7_JD_M3/S1_DE/J7E/J7B_HF/J7B_ZY/J7B/T7A_BN 硬件号 1/2/15/16/17/22/24/26/28/29/32/36/37/38/39/44/45/46/47/49/54
+//对应设备：P7/T7/T7E_TS/T7_TS/T7_LW/T7_CY/C7/S7_JD/T7A/T7_HI/T7B_HF/S7_SD/T7E/T7E_HFHH/S7_JD_M3/S1_DE/J7E/J7B_HF/J7B_ZY/J7B 硬件号 1/2/15/16/17/22/24/26/28/29/32/36/37/38/39/44/45/46/47/49
 /** 标准A5设备纵向 纵向 宽度**/
 #define VALUE_A5_WIDTH  14335.0f
 /** 标准A5设备纵向 高度**/
@@ -66,21 +66,6 @@
 #define VALUE_X8_A5_WIDTH  22100.0f
 /**BLE X8 纵向 高度**/
 #define VALUE_X8_A5_HEIGHT  14650.0f
-
-/**BLE K7_HW 纵向 宽度**/ //51
-#define VALUE_K7_HW_WIDTH  22016.0f
-/**BLE K7_HW 纵向 高度**/
-#define VALUE_K7_HW_HEIGHT  14787.0f
-
-/**BLE K8_ZM 纵向 宽度**/ //52
-#define VALUE_K8_ZM_WIDTH  22750.0f
-/**BLE K8_ZM 纵向 高度**/
-#define VALUE_K8_ZM_HEIGHT  14949.0f
-
-/**BLE K7W 纵向 宽度**/ //53
-#define VALUE_K7W_WIDTH  21260.0f
-/**BLE K7W 纵向 高度**/
-#define VALUE_K7W_HEIGHT  13842.0f
 
 /**BLE DM6 纵向 宽度**/ //27
 #define VALUE_DM6_WIDTH  109.0f
@@ -194,16 +179,6 @@ typedef enum {
     J7B = 49,
     
     T9W_QX = 50,
-
-    K7_HW = 51,
-    
-    K8_ZM = 52,
-    
-    K7W = 53,
-    
-    T7A_BN = 54,
-    
-    T9W_YJ = 55,
     
 } DeviceType;
 
@@ -415,18 +390,6 @@ typedef enum{
     DeviceEvent_NEXT_Double,
     /**下翻页长按*/
     DeviceEvent_NEXT_Long,
-    /**自定义按键1单击*/
-    DeviceEvent_SELF1_Single,
-    /**自定义按键1双击*/
-    DeviceEvent_SELF1_Double,
-    /**自定义按键1长按*/
-    DeviceEvent_SELF1_Long,
-    /**自定义按键2单击*/
-    DeviceEvent_SELF2_Single,
-    /**自定义按键2双击*/
-    DeviceEvent_SELF2_Double,
-    /**自定义按键2长按*/
-    DeviceEvent_SELF2_Long,
 }DeviceEventType;
 
 

@@ -403,12 +403,6 @@
 
 /*!
  @method
- @abstract 获取设备存储扇区大小
- @discussion T9A_EN专用
- */
--(void)getDeviceSectionSize;
-/*!
- @method
  @abstract 设置是否获取mac 和 Sensor
  @param getMAC 布尔值
  @param getSensor 布尔值
@@ -547,27 +541,6 @@
  @discussion T7B_HF 使用
  */
 - (void)resetDeviceSleepTime;
-
-#pragma mark ---------------------------DM6--------------------------
-
-/*!
- @method
- @abstract 设置原点坐标
- @discussion DM6 使用
- @param upleftPoint 左上角坐标
- @param lowrightPoint 右下坐标
- */
-- (void)setDM6OriginPointWithUpleftPoint:(CGPoint)upleftPoint LowrightPoint:(CGPoint)lowrightPoint;
-
-/*!
- @method
- @abstract 获取点阵纸的图片
- @discussion DM6 使用
- @param sk 用户秘钥
- @param point 坐标
- */
-- (void)getDM6OriginImageWithSK:(NSString *)sk Point:(CGPoint)point Success:(void (^)(id responseObject))Success Failure:(void (^)(NSError *error))Failure;
-
 #pragma mark ---------------------------Other---------------------------
 
 /*!
